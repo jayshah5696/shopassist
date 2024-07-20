@@ -47,8 +47,7 @@ async def chatbot_endpoint(request: ChatRequest):
         json.dump(chat_history, f)
 
     # Convert assistant message to markdown
-    markdown_response = markdown.markdown(assistant_message)
-    return {"response": markdown_response}
+    return {"response": assistant_message}
 
 @app.post("/chatbot_reset")
 async def chatbot_reset(session_id: str):
