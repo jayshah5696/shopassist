@@ -49,8 +49,7 @@ iface = gr.ChatInterface(
     ],
     title="Chatbot Interface",
     description="A simple chatbot interface using Gradio's ChatInterface API.",
-    theme="compact",
-    avatar_images=(None, "https://em-content.zobj.net/source/twitter/53/robot-face_1f916.png")
+    theme="compact"
 )
 
-iface.launch(share=True)
+iface.launch(share=False)

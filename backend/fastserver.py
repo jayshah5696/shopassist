@@ -56,9 +56,18 @@ async def chatbot_reset(session_id: str):
         os.remove(history_file)
     return {"status": "reset successful"}
 
+@app.get("/chat_history/{session_id}")
+async def get_chat_history(session_id: str):
+    history_file = os.path.join(HISTORY_DIR, f"{session_id}.json")
+    if os.path.exists(history_file):
+        with open(history_file, "r") as f:
+            chat_history = json.load(f)
+        return {"history": chat_history}
+    else:
+        print('File does not exist')
+        print(history_file)
+    return {"history": []}
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-
