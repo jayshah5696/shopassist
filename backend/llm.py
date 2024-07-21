@@ -10,7 +10,7 @@ api_key = os.getenv('GROQ_API_KEY')
 if not api_key:
     raise ValueError("GROQ_API_KEY not found in environment variables")
 
-print(api_key)
+# print(api_key)
 
 def completion_llm(text, model='groq/llama3-70b-8192t'):
     messages = [{ "content": text, "role": "user" }]

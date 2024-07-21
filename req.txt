@@ -4,3 +4,5 @@ fastapi
 markdown
 crewai
 crewai[tools]
+agentops
+multion

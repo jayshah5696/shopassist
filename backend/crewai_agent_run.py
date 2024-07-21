@@ -46,3 +46,5 @@ search_crew = Crew(
 # Example of kicking off the crew with a sample query
 result = search_crew.kickoff(inputs={'query': 'Latest trends in AI'})
 print(result)
+
+
