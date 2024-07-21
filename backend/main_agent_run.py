@@ -11,7 +11,7 @@ def main():
     agentops.init(tags=["crew-search-assistant"])
 
     print("Initializing Search Assistant Crew...")
-    search_query = "Top 10 AI tools for agent in 2024"
+    search_query = "men business casual chinos under $50"
     context = [{"user_query": search_query}]
 
     tasks =SearchTasks()

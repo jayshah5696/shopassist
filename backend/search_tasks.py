@@ -17,6 +17,7 @@ class SearchTasks():
                     Please provide your analysis in a clear, concise format. This information will be used to refine our product recommendation algorithm.
 
                 USER QUERY = original query: {query}
+                provide the analysis in a clear, concise format
                 """
             ),
             agent=agent,
@@ -33,6 +34,7 @@ class SearchTasks():
                 original query: {query}
 
                 Please generate a reddit search query that captures the user's intent and preferences effectively.
+                put it in a single clear sentence
                 """
             ),
             agent=agent,

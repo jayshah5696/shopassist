@@ -34,6 +34,7 @@ class search_agents():
                 """
                 The Query Writer generates a well-structured product search query based on the analysis of the user query.
                 This query is designed to retrieve relevant results from the reddit and capture the user's intent effectively.
+                put it in a single clear sentence
                 """
             ),
             verbose=False,
@@ -65,7 +66,9 @@ class search_agents():
                 The Synthesis Assistant generates a coherent response that provides product recommendations, highlights key features, 
                 and addresses the user's needs effectively. This response is based on the user query, analysis, and search results.
                 Put it all togehter in a clear table format. with the following columns:
+                try to include
                 product name | brand | price | features | link to product page | why recommended
+                else just include what you can put together a table
                 """
             ),
             verbose=False,

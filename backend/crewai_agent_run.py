@@ -44,7 +44,7 @@ search_crew = Crew(
 )
 
 # Example of kicking off the crew with a sample query
-result = search_crew.kickoff(inputs={'query': 'Latest trends in AI'})
+result = search_crew.kickoff(inputs={'query': 'men business casual chinos under $50'})
 print(result)
 
 

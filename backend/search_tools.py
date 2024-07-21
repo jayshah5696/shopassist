@@ -26,15 +26,17 @@ class Search_Tools:
         # )
         retrieve_response = multion_client.retrieve(
         cmd=query,
-        url="https://www.google.com",
-        fields=["title", "description", "url"],
+        url="https://www.google.com/",
+        fields=["title", "description", "url","features"],
         local=False)
 
         # Check if the request was successful
         if retrieve_response.status == "DONE":
             results = (retrieve_response.dict()['data'])
+            print(results)
             return results
         else:
+            print(f"Error: {retrieve_response.status} - {retrieve_response.message}")
             return f"Error: {retrieve_response.status} - {retrieve_response.message}"
 
 
