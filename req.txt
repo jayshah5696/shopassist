@@ -2,3 +2,5 @@ litellm
 streamlit
 fastapi
 markdown
+crewai
+crewai[tools]

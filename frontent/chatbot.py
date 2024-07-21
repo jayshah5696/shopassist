@@ -7,7 +7,7 @@ import uuid
 HISTORY_DIR = "backend/history"
 
 def send_message(session_id, message):
-    url = "http://localhost:8000/chatbot"
+    url = "http://localhost:8000/chatbotv2"
     payload = {"session_id": session_id, "message": message}
     response = requests.post(url, json=payload)
     
